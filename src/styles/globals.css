@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+
+:root {
+  --border: #1e1714;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  height: 100vh;
+  background: #f4f6f2;
+  font-size: 1.2rem;
+  color: #402a18;
+}
+
+header {
+  padding: 1rem 4rem;
+  width: 100%;
+  min-height: 10vh;
+  background: #e0a97d;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid var(--border);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+header h1 {
+  font-family: "Protest Riot", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+
+  background: linear-gradient(110.42deg, #2e1d01 30%, #462803 63.56%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 5px 6px rgba(0, 0, 0, 0.3);
+}
+
+header .input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input label {
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--border);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.input label i {
+  font-size: 1.5rem;
+}
+
+.image {
+  width: 36rem;
+  height: 25rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid var(--border);
+  border-radius: 0.5rem;
+
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.image:hover {
+  box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.13);
+}
+
+.image img {
+  width: calc(100% + 1rem);
+  height: calc(100% + 0.5rem);
+
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    padding: 1rem 2rem;
+    gap: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  .input label {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--border);
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .input label i {
+    font-size: 1rem;
+  }
+
+  .image {
+    width: 18rem;
+    height: 20rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid var(--border);
+    border-radius: 0.5rem;
+
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+  }
+}
